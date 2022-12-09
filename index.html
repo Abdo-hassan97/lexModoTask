@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LexModo</title>
+  <!-- Main Template CSS File -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Render All Elements Normally -->
+  <link rel="stylesheet" href="normalize.css" />
+  <!-- Font Awesome Library -->
+  <link rel="stylesheet" href="all.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&#038;display=swap"
+    rel="stylesheet" />
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+  <!--Start Header-->
+  <div class="header">
+  </div>
+  <!--End Header-->
+  <!--Start Body-->
+  <div id="cont" class="container">
+    <!-- Start SearchBar-->
+    <div id="mainBody" class="siteBody">
+      <i class="fa fa-search" aria-hidden="true"></i>
+      <input id="searchBar" type="text" placeholder="   Find Customers.." onkeyup="searchFun()"  >
+      <!--Start filter-->
+      <select name="filter" id="filter" onchange="sortFunc()">
+        <option value="" disabled selected>Filter By Name[A-Z]</option>
+        <option value="A-Z">Name[A-Z]</option>
+        <option value="Z-A">Name[Z-A]</option>
+      </select>
+      <!--End filter-->
+    </div>
+    <!-- End SearchBar-->
+
+    <!--Start Cards-->
+    <div class="parent" id=parent>
+      <div class="Card" id="cardContainer">
+        <!--End Cards-->
+      </div>
+      <!--End Body-->
+      <!--Js file-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js"></script>
+      <script src="script.js"></script>
+</body>
+
+</html>
